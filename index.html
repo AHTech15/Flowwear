@@ -887,9 +887,9 @@
     result.innerHTML = "";
 
     try {
-      const res = await fetch("/.netlify/functions/order", {
+      const res = await fetch("https://script.google.com/macros/s/AKfycbzG00w1jKP76Z04qncalurSFMGwwKJ650HIxnf3UYJS8GAzsvo-DTZ3NLnnVxx-pv4QPw/exec", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "text/plain;charset=utf-8" },
         body: JSON.stringify(order)
       });
       const out = await res.json();
